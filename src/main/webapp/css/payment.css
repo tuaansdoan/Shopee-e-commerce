@@ -1,0 +1,98 @@
+
+/* main payment */
+main {
+	width: 100%;
+	margin: auto;
+	margin-top: 140px;
+}
+#payment {
+	margin: 0 auto;
+	padding: auto o;
+	height: 60vh;
+	width: 90%;
+	background-color: white;
+	border: 2px solid #fb5330;
+	border-radius: 50px;
+	font-size: 16pt;
+	text-align: center;
+	font-weight: 400;
+	font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+	
+}
+
+#goi-y {
+	width: 90%;
+	margin: 0 auto;
+	background-color: white;
+	margin-top: 30px;
+}
+
+#goi-y>p {
+	width: 150px;
+	padding: 15px 15px;
+	color: #fb5330;
+	border-bottom: 2px solid #fb5330;
+	font-weight: 600;
+}
+
+#goi-y>ul {
+	display: flex;
+	justify-content: flex-start;
+	flex-wrap: wrap;
+	border-top: 2px solid gray;
+}
+
+#goi-y>ul img {
+	width: 100%;
+}
+
+#goi-y>ul>li {
+	flex-basis: 15%;
+	box-shadow: 1px 1px 5px gainsboro;
+	margin: 9px;
+}
+
+#goi-y>ul>li>a>p:nth-child(2) {
+	height: 40px;
+	margin: 8px;
+	font-size: 9pt;
+	color: gray;
+}
+
+#goi-y>ul>li>a>p:nth-child(3) {
+	margin: 8px;
+	color: #fb5330;
+	float: left;
+}
+
+#goi-y>ul>li>a>p:nth-child(4) {
+	float: right;
+	color: gray;
+	font-size: 8pt;
+	margin: 8px;
+}
+
+#goi-y>ul>li>a>p:nth-child(5) {
+	display: none;
+}
+
+#goi-y>ul>li:hover p:nth-child(5) {
+	display: block;
+	position: absolute;
+	background-color: #fb5330;
+	text-align: center;
+	padding: .5em;
+	margin-top: 3em;
+	color: white;
+	width: 168px;
+	font-size: 9pt;
+}
+
+#goi-y>ul>li:hover {
+	border: 1px solid #fb5330;
+}
+
+#goi-y>ul a {
+	color: black;
+}
+

@@ -1,0 +1,296 @@
+* {
+	margin: 0;
+	padding: 0;
+}
+
+body {
+	font-size: 11pt;
+	font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+	background-color: whitesmoke;
+	max-width: 1400px;
+	margin: 0 auto;
+}
+
+a {
+	text-decoration: none;
+	color: white;
+}
+
+ul {
+	list-style-type: none;
+}
+
+header {
+	width: 100%;
+}
+
+#navbar {
+	display: flex;
+	justify-content: space-between;
+	padding: 0 5em;
+	font-size: 9pt;
+	background-color: #fb5330;
+}
+
+#navbar div {
+	padding-top: .5em;
+}
+
+#navbar ul {
+	display: flex;
+	justify-content: space-between;
+	color: white;
+}
+
+#navbar>div:first-child>ul:first-child>li {
+	padding: 0 1em;
+	height: 15px;
+	border-right: 2px solid orange;
+	color: white;
+}
+
+#navbar ul:first-child>li:nth-child(4) {
+	border-right: 0;
+}
+
+#navbar ul:first-child>li:hover>a {
+	color: brown;
+}
+
+#app-barcode img {
+	display: none;
+	position: absolute;
+	box-shadow: 1px 1px 10px gray;
+	margin-top: 25px;
+}
+
+#app-barcode>a:hover>img {
+	display: block;
+	border-radius: 4px;
+	top: 2%;
+}
+
+#left-navbar li {
+	padding: 0 .75em;
+	display: flex;
+}
+
+#left-navbar li:hover {
+	color: brown;
+}
+
+#thongbao {
+	overflow: hidden;
+	position: absolute;
+	top: 5%;
+	right: 25%;
+	width: 0px;
+	height: 0px;
+	background-color: white;
+	color: black;
+	text-align: center;
+	transition: all .2s ease;
+	box-shadow: 1px 1px 10px gray;
+}
+
+#thongbao div:first-child {
+	height: 83%;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: center;
+}
+
+#thongbao div:nth-child(2) {
+	width: 100%;
+	height: 12%;
+}
+
+#left-navbar>ul:first-child>li:first-child:hover #thongbao {
+	display: block;
+	width: 300px;
+	height: 280px;
+}
+
+#thongbao input {
+	border: 0;
+	width: 49.4%;
+	height: 100%;
+	background-color: whitesmoke;
+	font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+#thongbao input:hover {
+	background-color: gainsboro;
+}
+
+#language {
+	overflow: hidden;
+	width: 0;
+	height: 0;
+	background-color: white;
+	position: absolute;
+	top: 5%;
+	right: 15%;
+	box-shadow: 1px 1px 10px gray;
+	transition: all 0.2s ease-in-out;
+}
+
+#language a {
+	display: block;
+	color: black;
+	padding: 1em;
+	padding-right: 3em;
+}
+
+#left-navbar>ul:first-child>li:nth-child(3):hover #language {
+	display: block;
+	width: 120px;
+	height: 80px;
+	padding-right: 3em;
+}
+
+#language a:hover {
+	color: orangered;
+}
+
+#dangnhap {
+	height: 15px;
+	border-left: 2px solid orange;
+}
+
+#login-menu a {
+	color: black;
+	display: block;
+	padding: .5em 1em;
+}
+
+#login-menu input {
+	background-color: white;
+	border: none;
+	padding: .5em 1em;
+	font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+	font-size: 9pt;
+}
+
+#login-menu a:hover, #login-menu input:hover {
+	color: orangered;
+}
+
+#login-menu {
+	overflow: hidden;
+	width: 0;
+	height: 0;
+	background-color: white;
+	position: absolute;
+	top: 5%;
+	right: 5%;
+	box-shadow: 1px 1px 10px gray;
+	transition: all 0.2s ease-in-out;
+}
+
+#dangnhap:hover #login-menu {
+	display: block;
+	width: 120px;
+	height: auto;
+}
+
+/* head */
+#search-bar {
+	display: flex;
+	width: 90%;
+	justify-content: space-between;
+	background-color: white;
+	padding: 0 5%;
+}
+
+#search-bar img {
+	width: 150px;
+	margin: 1em;
+}
+
+#search-bar>p:nth-child(2) {
+	flex-basis: 30%;
+	font-size: 16pt;
+	align-self: center;
+	text-align: left;
+}
+
+#search-bar>form:nth-child(3) {
+	text-align: end;
+	align-self: center;
+	background-color: white;
+	border-radius: 5px;
+	margin: 1em 0;
+	flex-basis: 50%;
+	border: 2px solid #fb5330;
+	height: 35px;
+}
+
+#search-bar input[type="search"] {
+	width: 90%;
+	height: 35px;
+	border: none;
+	float: left;
+	background: transparent;
+	margin: auto 0;
+}
+
+#search-bar button {
+	width: 10%;
+	height: 35px;
+	background-color: #fb5330;
+	text-align: center;
+	border: none;
+}
+
+.gg-search {
+	margin: 0 auto;
+	color: white;
+}
+
+/* main cart */
+main {
+	width: 90%;
+	margin: 1em auto;
+}
+
+#table-header {
+	display: flex;
+	background-color: #fb5330;
+	color: white;
+	font-size: 12pt;
+	font-weight: 500;
+	justify-content: space-around;
+	padding: 1em;
+}
+
+.userinfo {
+	display: flex;
+	justify-content: space-around;
+	padding: 1em;
+	background-color: white;
+	border-bottom: 1px solid whitesmoke;
+}
+
+.bttn {
+	flex-basis: 15%;
+	
+}
+
+.userinfo button {
+	height: 30px;
+	width: 100px;
+	border-radius: 5px;
+	background-color: transparent;
+	font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+.userinfo button:hover {
+	background-color: #fb5330;
+	color: white;
+	
+}
+.userinfo input {
+	border: none;
+	font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
